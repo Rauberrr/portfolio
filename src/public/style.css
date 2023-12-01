@@ -236,6 +236,8 @@ header {
     /* min-width: 768px; */
 }
 
+
+
 .skills-imgs div {
     height: 150px;
     padding: 3%;
@@ -383,6 +385,10 @@ footer {
 
     .skills {
         width: 100%;
+    }
+
+    .skills img {
+        width: 60px;
     }
 
     .main {
