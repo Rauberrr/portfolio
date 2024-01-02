@@ -17,7 +17,7 @@
     <section id="bloco1">
 
         <header class="flex space">
-            <div class="flex center">
+            <div class="flex center logo-header">
                 <img src="public/imgs/LogoWhite.svg" alt="">
             </div>
             <div class="flex center header-links">
@@ -34,12 +34,9 @@
                 <h2> Hi, i am Andre! </h2>
                 <h1 class="titles"> I HAVE EXTENSIVE <span class="purple"> KNOWLEDGE </span> IN <span class="purple">
                         PROGRAMMING </span> </h1>
-                <p class=""> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis provident incidunt quo,
-                    et rem laboriosam at modi! Numquam, quod facere. Assumenda ut ipsa sed incidunt vel aut corrupti,
-                    molestias nisi!</p>
                 <div class="flex buttons">
-                    <button class="button-purple"> Contact me </button>
-                    <button class="button-transparent"> See portfolio </button>
+                    <button class="button-purple" onclick="scrollToSection('bloco5')"> Contact me </button>
+                    <button class="button-transparent" onclick="scrollToSection('bloco4')"> See portfolio </button>
                 </div>
             </div>
             <div class="MainIMG">
@@ -57,18 +54,12 @@
             </div>
             <div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sunt voluptate, harum dolorum
-                    mollitia officia fuga tempora porro? Repudiandae voluptas dicta mollitia error libero aliquid
-                    officiis eligendi recusandae rem ipsum?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem vel sit unde consequatur natus esse
-                    cupiditate tenetur doloremque temporibus consectetur error dicta nulla ipsam rem velit ipsa, maxime
-                    sint necessitatibus.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cum cumque fuga, praesentium tenetur,
-                    sit beatae provident maiores corporis accusamus sunt dolorum quas sint laudantium veniam sapiente
-                    recusandae accusantium in.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fuga eaque cum necessitatibus
-                    nobis quae cupiditate eius autem architecto accusantium. Aperiam veritatis qui at corrupti dicta
-                    praesentium inventore animi? Ipsam.
+                    Eu sou André sou formado no IFPR com curso técnico de informática integrado ao ensino médio. Tenho uma base em
+                    desenvolvimento FullStack e estou procurando por oportunidades de emprego na área. Além de estar sempre buscando aprender mais sobre as tecnologias utilizadas no mercado, sou
+                    uma pessoa dedicada, comprometida e estou sempre em busca de novos desafios. Além disso, possuo habilidades em
+                    comunicação e trabalho em equipe, o que me permite colaborar efetivamente com colegas de trabalho. Se você está
+                    procurando por um desenvolvedor FullStack, ou sendo em outras áreas, entre em contato comigo para
+                    discutirmos como posso contribuir para o seu projeto. 
                 </p>
             </div>
 
@@ -78,21 +69,36 @@
         <div class="skills">
             <h1 class="flex left single-text titles end"><span class="purple"> HARD <br> SKILLS </span> </h1>
             <div class="flex center skills-imgs text-align">
-                <div>
-                    <img src="public/imgs/node.svg" alt="">
+                <div id="nodejs">
+                    <img  src="public/imgs/nodejs.svg" onclick="handleImgs('nodejs')" alt="">
                     <p> Node.js</p>
                 </div>
-                <div>
-                    <img src="public/imgs/html.svg" alt="">
+                <div id="html">
+                    <img  src="public/imgs/html.svg" onclick="handleImgs('html')" alt="">
                     <p> HTML </p>
                 </div>
-                <div>
-                    <img src="public/imgs/js.svg" alt="">
+                <div id="js"> 
+                    <img  src="public/imgs/js.svg" onclick="handleImgs('js')" alt="">
                     <p> JavaScript </p>
                 </div>
-                <div>
-                    <img src="public/imgs/css.svg" alt="">
+                <div class="imgColor" id="displayedImage">
+
+                </div>
+                <div id="css">
+                    <img  src="public/imgs/css.svg" onclick="handleImgs('css')" alt="">
                     <p> CSS </p>
+                </div>
+                <div id="mongodb"> 
+                    <img  src="public/imgs/mongodb.svg" onclick="handleImgs('mongodb')" alt="">
+                    <p> MongoDb</p>
+                </div>
+                <div id="type" >
+                    <img src="public/imgs/typescript.svg" onclick="handleImgs('type')" alt="">
+                    <p> TypeScript </p>
+                </div>
+                <div id="sql">
+                    <img  src="public/imgs/sql.svg" onclick="handleImgs('sql')" alt="">
+                    <p> SQL </p>
                 </div>
             </div>
             <h1 class="flex right single-text titles end"> <span class="purple">SOFT <br> SKILLS</span> </h1>
@@ -128,25 +134,33 @@
         <div class="grid works">
             <div class="text-align">
                 <h2>V&S Tecnologia</h2>
-                <img src="https://ves.tec.br/images/logo.png" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui animi, fuga nostrum, non temporibus
-                    expedita dolores ea magnam amet, vitae aspernatur iure sint ad minus itaque nam dolore commodi
-                    porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus provident voluptatum minima
-                    odit praesentium nam, inventore dolores numquam ab suscipit repellat dolor vero qui assumenda
-                    ducimus, ut ad veniam nisi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis vero
-                    pariatur, sunt error veniam neque architecto eveniet autem eaque excepturi ex ea libero quaerat
-                    dicta! Minima commodi eius ab voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint iusto veritatis autem ratione similique numquam dignissimos eaque tempora corrupti velit harum
-                    cumque unde, voluptas ad doloribus consequuntur aspernatur dolores pariatur.</p>
+                <img src="public/imgs/ves.png" alt="">
+                <p>Website para V&S Tecnologia, com FrontEnd e BackEnd, com integração de notícias de um site externo.</p>
+                <section class="flex button">
+                    <button onclick="window.location.href = `https://ves.tec.br/` "> View Project </button>
+                </section>
             </div>
             <div class="text-align">
-                <h2>Content</h2>
+                <h2>LoginShop Project</h2>
+                <div class="flex">
+                    <img src="public/imgs/homeShop" alt="">
+                    <img src="public/imgs/product.png" alt="">
+                </div>
+                <p>LoginShop, consistiu em ser um e-commerce de produtos, feito em typeScript e mongoDb, e o visual em ReactJs. Que há um sistema de Login e Token, com JWT. E integração com api de Pagamento do PayPal. </p>
+                <section class="flex button">
+                    <button onclick="window.location.href = `https://github.com/Rauberrr/login-shop`"> View Project </button>
+                </section>
             </div>
             <div class="text-align">
-                <h2>Content</h2>
-            </div>
-            <div class="text-align">
-                <h2>Content</h2>
+                <h2>Luffy Project</h2>
+                <div class="flex">
+                    <img src="public/imgs/home.png" alt="">
+                    <img src="public/imgs/profile.png" alt="">
+                </div>
+                <p>Luffy project se passa como um blog, que tem um banco de dados PostgreSQL, BackEnd em typescript, e FrontEnd em ReactJs. Funcionalidades de upload de imagem, criar e deletar posts e curtir.</p>
+                <section class="flex button">
+                    <button onclick="window.location.href = `https://github.com/Rauberrr/luffy`"> View Project </button>
+                </section>
             </div>
 
         </div>
@@ -226,6 +240,42 @@
             });
         });
 
+        function handleImgs(id) {
+            
+            console.log(id)
+
+            const imgs = document.querySelectorAll('.skills-imgs div')
+            const ImgID = document.getElementById(id)
+            const displayedImage = document.getElementById('displayedImage')
+
+            imgs.forEach((img) => {
+                img.style.display = 'block'
+            })
+
+        
+
+
+            ImgID.style.mixBlendMode = 'normal'
+
+            const clonedImg = ImgID.cloneNode(true)
+
+            displayedImage.innerHTML = ''
+            displayedImage.appendChild(clonedImg)
+
+            ImgID.style.display = 'none'
+        }
+        handleImgs('type')
+
+        function scrollToSection(id) {
+                const section = document.getElementById(id);
+
+                if (section) {
+                    section.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
 
         // const works = document.querySelector('.works')
 
