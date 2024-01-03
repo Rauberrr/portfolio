@@ -241,13 +241,18 @@ header {
     /* min-width: 768px; */
 }
 
+.skills-imgs{
+    width: 100%;
+}
+
 .skills-imgs div {
-    height: 150px;
+    /* height: 150px; */
     padding: 3%;
 }
 
 .skills-imgs img {
     width: 5vw;
+    min-width: 20px;
     mix-blend-mode: luminosity;
 }
 
@@ -400,6 +405,7 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    
     .space {
         justify-content: space-between;
     }
@@ -448,6 +454,11 @@ footer {
         flex-direction: column;
     }
 
+    .row {
+        /* display: flex; */
+        flex-wrap: wrap;
+    }
+
     .about {
         width: 100%;
     }
@@ -456,9 +467,19 @@ footer {
         width: 100%;
     }
 
-    .skills img {
-        width: 60px;
-        background-color: #25D366;
+    .skills-imgs{
+        /* display: flex; */
+        flex-wrap: wrap;
+    }
+     
+    .skills-imgs img {
+        width: 5vw;
+        mix-blend-mode: luminosity;
+    }
+
+    .imgColor img {
+        width: 5vw;
+        mix-blend-mode: normal;
     }
 
     .main {
