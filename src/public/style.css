@@ -297,7 +297,6 @@ header {
 .works {
     margin-top: 100px;
     justify-content: center;
-    width: 80%;
     margin: auto;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -310,7 +309,8 @@ header {
 
 .works div {
     margin: auto;
-    /* max-width: 400px; */
+    width: 80%;
+    /* max-width: 200px; */
     border-radius: 28px;
     padding: 2%;
     background: var(--Branco-Escuro);
